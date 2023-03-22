@@ -1,14 +1,14 @@
-import Head from "./MetaHelmet";
+import MetaHelmet from "./MetaHelmet";
+import Header from './Header';
+import Footer from './Footer';
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Head />
-      <header>
-        <h1>laissez-faire</h1>
-      </header>
+      <MetaHelmet />
+      <Header />
       <main>{children}</main>
-      <footer>footer</footer>
+      <Footer />
     </>
   );
 };

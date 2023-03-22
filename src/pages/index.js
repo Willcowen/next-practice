@@ -1,13 +1,9 @@
-import Head from "next/head";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import ProductsPage from "./products/index";
 
 export default function Home() {
   return (
     <>
-      <main className={styles.main}>Main Content</main>
+      <ProductsPage />
     </>
   );
 }

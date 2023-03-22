@@ -1,0 +1,16 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  box-shadow: rgb(30, 30, 30) 0px 0px 10px;
+}
+
+.copyright {
+    padding: 1rem;
+}

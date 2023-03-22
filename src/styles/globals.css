@@ -4,3 +4,9 @@
   margin: 0;
 }
 
+html {
+  width: 100vw;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 10px;
+  background-color: #ece8e8;
+}
