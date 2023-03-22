@@ -1,9 +1,9 @@
-import ProductsPage from "./products/index";
+import Hero from "../../components/Hero";
 
 export default function Home() {
   return (
     <>
-      <ProductsPage />
+      <Hero />
     </>
   );
 }

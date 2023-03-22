@@ -1,0 +1,16 @@
+.image {
+  aspect-ratio: 16 / 9;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 2rem auto;
+  padding: 1rem;
+  width: 100%;
+  max-width: 100rem;
+}
+
+.image img {
+  object-fit: fill;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+}
