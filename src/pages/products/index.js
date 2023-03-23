@@ -1,8 +1,14 @@
 import { getData } from "../../../helpers/getData";
-import FeaturedProducts from "../../../components/products/FeaturedProducts";
+import ProductList from "../../../components/products/ProductList";
+import classes from "../../styles/AllProductsPage.module.css";
 
 const AllProductsPage = ({ products }) => {
-  return <FeaturedProducts products={products} />;
+  return (
+    <div className={classes.container}>
+      <h1>All Products</h1>
+      <ProductList products={products} />;
+    </div>
+  );
 };
 
 export default AllProductsPage;

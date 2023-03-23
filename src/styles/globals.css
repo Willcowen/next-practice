@@ -9,5 +9,5 @@ html {
   width: 100vw;
   font-family: "Staatliches", cursive;
   font-size: 10px;
-  background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+  background-color: white;
 }
