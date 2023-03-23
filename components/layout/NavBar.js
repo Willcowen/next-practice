@@ -8,17 +8,17 @@ const NavBar = () => {
       <ul className={classes.navlist}>
         <li>
           <Link className={classes.navlistitem} href="/">
-            <Image src="/home.png" width={35} height={35} alt="home" />
+            <Image src="/home.png" width={30} height={30} alt="home" />
           </Link>
         </li>
         <li>
           <Link className={classes.navlistitem} href="/products">
-            <Image src="/tshirt.png" width={35} height={35} alt="products" />
+            <Image src="/tshirt.png" width={30} height={30} alt="products" />
           </Link>
         </li>
         <li>
-          <Link className={classes.navlistitem} href="/about">
-            <Image src="/cart.png" width={35} height={35} alt="basket" />
+          <Link className={classes.navlistitem} href="/basket">
+            <Image src="/cart.png" width={30} height={30} alt="basket" />
           </Link>
         </li>
       </ul>

@@ -1,15 +1,14 @@
-.image {
+.hero {
   position: relative;
   aspect-ratio: 16 / 9;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  margin: 2rem auto;
+  margin: 0 auto;
   padding: 1rem;
   width: 100%;
-  max-width: 100rem;
+  max-width: 130rem;
 }
 
-.image img {
+.hero img {
   filter: brightness(50%);
   object-fit: fill;
   object-position: top;
@@ -19,14 +18,22 @@
 
 .button {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 2rem;
   text-align: center;
+  z-index: 0;
   font-size: 2rem;
   font-weight: 500;
   border: none;
   background-color: black;
   color: white;
+}
+
+
+.button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
 }

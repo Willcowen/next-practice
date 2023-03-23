@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "id": "p1",
+      "title": "Product 1",
+      "description": "This is product 1",
+      "price": "£15.99",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fb8%2Fd0%2Fb8d06e38d9144ba75166a75aa8e6ec2c25c1569d.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "isFeatured": true
+    },
+    {
+      "id": "p2",
+      "title": "Product 2",
+      "description": "This is product 2",
+      "price": "£15.99",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F26%2Fe8%2F26e8d1e52b4b9078effc093eccc56d225462e0cf.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "isFeatured": true
+    },
+    {
+      "id": "p3",
+      "title": "Product 3",
+      "description": "This is product 3",
+      "price": "£15.99",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fcc%2F87%2Fcc878a2df6877c339a6d610530f93284cd4e9691.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "isFeatured": true
+    },
+    {
+      "id": "p4",
+      "title": "Product 4",
+      "description": "This is product 4",
+      "price": "£15.99",
+      "image": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F20%2F14%2F2014d35c596bc8842374ab3ba29b3d6cf2e0e727.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
+      "isFeatured": true
+    }
+  ]
+}
