@@ -1,3 +1,4 @@
+import Image from "next/image";
 import classes from "./NavBar.module.css";
 import Link from "next/link";
 
@@ -7,17 +8,17 @@ const NavBar = () => {
       <ul className={classes.navlist}>
         <li>
           <Link className={classes.navlistitem} href="/">
-            Home
+            <Image src="/home.png" width={35} height={35} alt="home" />
           </Link>
         </li>
         <li>
           <Link className={classes.navlistitem} href="/products">
-            Products
+            <Image src="/tshirt.png" width={35} height={35} alt="products" />
           </Link>
         </li>
         <li>
           <Link className={classes.navlistitem} href="/about">
-            About
+            <Image src="/cart.png" width={35} height={35} alt="basket" />
           </Link>
         </li>
       </ul>

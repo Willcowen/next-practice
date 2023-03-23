@@ -11,6 +11,7 @@ const Hero = () => {
         alt="clothes store image"
         quality={100}
       />
+      <button className={classes.button}>SHOP NOW</button>
     </div>
   );
 };
