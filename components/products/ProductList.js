@@ -4,8 +4,8 @@ import ListItem from "./ListItem";
 const ProductList = ({ products }) => {
   return (
     <ul className={classes.featured}>
-      {products.map((product) => (
-        <ListItem product={product} />
+      {products.map((product, index) => (
+        <ListItem product={product} key={index} />
       ))}
     </ul>
   );

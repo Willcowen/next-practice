@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const ListItem = ({ product }) => {
   return (
-    <li className={classes.listitem} key={"item_" + product.id}>
+    <li className={classes.listitem} key={"item__" + product.id}>
       <Link href={"/products/" + product.id}>
         <div className={classes.productcontainer}>
           <div className={classes.imagecontainer}>
