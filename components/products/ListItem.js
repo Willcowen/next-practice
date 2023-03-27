@@ -1,12 +1,11 @@
+import { useContext } from "react";
 import classes from "./ListItem.module.css";
 import Image from "next/legacy/image";
 import Link from "next/link";
-import { useDispatch } from 'react-redux';
+import { CartContext } from "../../context/createContext";
 
 const ListItem = ({ product }) => {
-
-  const dispatch = useDispatch();
-
+  const { addToCart } = useContext(CartContext);
   return (
     <li className={classes.listitem} key={"item__" + product.id}>
       <Link href={"/products/" + product.id}>
@@ -24,7 +23,9 @@ const ListItem = ({ product }) => {
             <h3>{product.title}</h3>
             <p>{product.description}</p>
             <p>{product.price}</p>
-            <button className={classes.button}>ADD TO BASKET</button>
+            <button className={classes.button} onClick={() => addToCart(product)}>
+              ADD TO BASKET
+            </button>
           </div>
         </div>
       </Link>
