@@ -6,7 +6,7 @@ const AllProductsPage = ({ products }) => {
   return (
     <div className={classes.container}>
       <h1>All Products</h1>
-      <ProductList products={products} />;
+      <ProductList products={products} />
     </div>
   );
 };

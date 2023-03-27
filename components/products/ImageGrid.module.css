@@ -18,13 +18,15 @@
   width: 100%;
   height: 70%;
 }
+.imagecontainer .mainimage {
+    width: 100%;
+}
 .imageselector {
   display: flex;
   gap: 1rem;
   justify-content: center;
   width: 100%;
   margin-top: 2rem;
-  /* align-items: flex-start; */
 }
 
 .mainimage {

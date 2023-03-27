@@ -1,8 +1,12 @@
 import classes from "./ListItem.module.css";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
+import { useDispatch } from 'react-redux';
 
 const ListItem = ({ product }) => {
+
+  const dispatch = useDispatch();
+
   return (
     <li className={classes.listitem} key={"item__" + product.id}>
       <Link href={"/products/" + product.id}>
@@ -15,7 +19,6 @@ const ListItem = ({ product }) => {
               alt={product.title}
               priority={true}
             />
-            <p className={classes.overlay}>VIEW MORE INFO</p>
           </div>
           <div className={classes.productinfo}>
             <h3>{product.title}</h3>
