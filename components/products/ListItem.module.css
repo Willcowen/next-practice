@@ -16,6 +16,7 @@
 .imagecontainer {
   width: 100%;
 }
+
 .imagecontainer img {
   max-height: 70rem;
 }
@@ -49,4 +50,17 @@
   cursor: pointer;
   background-color: white;
   color: black;
+}
+
+@media only screen and (max-width: 1200px) {
+  .imagecontainer {
+    width: 100%;
+    height: 100%;
+  }
+  .imagecontainer img {
+    max-height: 100%;
+  }
+  .productinfo {
+    padding: 1rem;
+  }
 }

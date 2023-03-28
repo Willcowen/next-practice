@@ -8,9 +8,9 @@ const ListItem = ({ product }) => {
   const { addToCart } = useContext(CartContext);
   return (
     <li className={classes.listitem} key={"item__" + product.id}>
-      <Link href={"/products/" + product.id}>
-        <div className={classes.productcontainer}>
-          <div className={classes.imagecontainer}>
+      <div className={classes.productcontainer}>
+        <div className={classes.imagecontainer}>
+          <Link href={"/products/" + product.id}>
             <Image
               src={product.image[0]}
               height={952}
@@ -18,17 +18,17 @@ const ListItem = ({ product }) => {
               alt={product.title}
               priority={true}
             />
-          </div>
-          <div className={classes.productinfo}>
-            <h3>{product.title}</h3>
-            <p>{product.description}</p>
-            <p>{product.price}</p>
-            <button className={classes.button} onClick={() => addToCart(product)}>
-              ADD TO BASKET
-            </button>
-          </div>
+          </Link>
         </div>
-      </Link>
+        <div className={classes.productinfo}>
+          <h3>{product.title}</h3>
+          <p>{product.description}</p>
+          <p>{product.price}</p>
+          <button className={classes.button} onClick={() => addToCart(product)}>
+            ADD TO BASKET
+          </button>
+        </div>
+      </div>
     </li>
   );
 };

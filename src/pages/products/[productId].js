@@ -20,7 +20,6 @@ const IndividualProductPage = ({ loadedProduct }) => {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          {/* <p>{loadedProduct.description}</p> */}
           <p className={classes.price}>{loadedProduct.price}</p>
           <button className={classes.button}>ADD TO BASKET</button>
         </div>
