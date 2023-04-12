@@ -1,4 +1,4 @@
-import { getData } from "../../../helpers/getData";
+import { getProductById, getProducts } from "../api/index";
 import classes from "../../styles/IndividualProductPage.module.css";
 import ImageGrid from "../../../components/products/ImageGrid";
 
@@ -33,26 +33,33 @@ export default IndividualProductPage;
 export async function getStaticProps(context) {
   const { params } = context;
   const productId = params.productId;
-
-  const data = await getData();
-
-  const product = data.products.find((product) => product.id === productId);
-  console.log("looking here:", product);
+  console.log("productId", productId)
+  const product = await getProductById(productId);
+  console.log('data inside getStaticProps', product);
+  
   if (!product) {
     return { notFound: true };
   }
 
   return {
     props: {
-      loadedProduct: product,
+      loadedProduct: {
+        id: product._id.toString(),
+        title: product.title,
+        price: product.price,
+        description: product.description,
+        image: product.image,
+      }
     },
   };
 }
 
 export async function getStaticPaths() {
-  const data = await getData();
 
-  const ids = data.products.map((product) => product.id);
+  const data = await getProducts();
+
+
+  const ids = data.map((product) => product._id.toString());
   const pathsWithParams = ids.map((id) => ({ params: { productId: id } }));
 
   return {

@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+.imagecontainer {
+  width: 30%;
+}
+
+.imagecontainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

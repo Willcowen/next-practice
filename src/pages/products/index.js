@@ -1,4 +1,4 @@
-import { getData } from "../../../helpers/getData";
+import { getProducts } from "../api/index";
 import ProductList from "../../../components/products/ProductList";
 import classes from "../../styles/AllProductsPage.module.css";
 
@@ -14,23 +14,17 @@ const AllProductsPage = ({ products }) => {
 export default AllProductsPage;
 
 export async function getStaticProps() {
-  const data = await getData();
-
-  if (!data) {
-    return {
-      redirect: {
-        destination: "/no-data",
-      },
-    };
-  }
-
-  if (data.products.length === 0) {
-    return { notFound: true };
-  }
+  const data = await getProducts();
 
   return {
     props: {
-      products: data.products,
+      products: data.map((product) => ({
+        id: product._id.toString(),
+        title: product.title,
+        price: product.price,
+        description: product.description,
+        image: product.image,
+      })),
     },
     revalidate: 10,
   };

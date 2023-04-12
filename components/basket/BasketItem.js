@@ -1,10 +1,23 @@
+import Image from "next/image";
+import classes from "./BasketItem.module.css";
+
 const BasketItem = ({ item }) => {
   return (
     <li>
-      <p>{item.title}</p>
-      <p>{item.description}</p>
-      <p>{item.price}</p>
-      <p>{item.title}</p>
+      <div className={classes.container}>
+        <p>{item.title}</p>
+        <div className={classes.imagecontainer}>
+          <Image
+            src={item.image[0]}
+            height={952}
+            width={634}
+            alt={item.title}
+            priority={true}
+          />
+        </div>
+        <p>{item.price}</p>
+        <p>{item.quantity}</p>
+      </div>
     </li>
   );
 };
